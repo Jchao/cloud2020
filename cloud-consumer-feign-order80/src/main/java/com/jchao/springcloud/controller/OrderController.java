@@ -20,7 +20,7 @@ public class OrderController {
         return orderServiceFeign.getOnePayment((int) id);
     }
 
-    @GetMapping(value = {"/payment/fegin/timeout"})
+    @GetMapping(value = {"/consumer/payment/fegin/timeout"})
     public String feginTimeout(){
         return orderServiceFeign.feginTimeout();
     }
